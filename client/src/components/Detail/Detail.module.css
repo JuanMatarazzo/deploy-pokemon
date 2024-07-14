@@ -1,0 +1,375 @@
+
+html, body, #root {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+}
+.containerOne {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #F2F3F4;
+}
+
+.container {
+  width: 100%; 
+  max-width: 24rem; 
+  border-radius: 0.5rem; 
+  overflow: hidden; 
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+    0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    background-color: white;
+}
+
+.relative_container {
+  position: relative; 
+  display: flex;
+  justify-content: center;
+  
+}
+
+.full_cover {
+  height: 20rem;
+  object-fit: cover; 
+}
+
+.padding_box {
+  padding: 1.5rem 2.5rem; 
+}
+
+.flex_container {
+  display: flex; 
+  align-items: center; 
+  justify-content: space-between; 
+  margin-bottom: 1rem; 
+  
+}
+
+.bold_text {
+  font-size: 1.25rem; 
+  font-weight: bold; 
+}
+
+.medium_gray_text {
+  color: #6b7280; 
+  font-weight: 500; 
+}
+
+.grid_container {
+  display: grid; 
+  grid-template-columns: repeat(3, minmax(0, 1fr)); 
+  gap: 1rem; 
+  
+}
+
+.flex_containertwo {
+  display: flex; 
+  align-items: center; 
+  justify-content: space-around
+}
+
+.svg_red {
+  width: 1.25rem; 
+  height: 1.25rem; 
+  color: #dc2626; 
+}
+
+.hp {
+  color: #111827; 
+  font-weight: bold; 
+}
+
+.svg_yellow {
+  width: 1.25rem; 
+  height: 1.25rem; 
+  color: #f59e0b; 
+}
+
+.attack_text {
+  color: #111827; 
+  font-weight: bold; 
+}
+
+.svg_blue {
+  width: 1.25rem; 
+  height: 1.25rem; 
+  color: #3b82f6; 
+}
+
+.bold_defense_gray {
+  color: #111827; 
+  font-weight: bold; 
+}
+
+.svg_green {
+  width: 1.25rem; 
+  height: 1.25rem; 
+  color: #10b981; 
+}
+
+.svg_gray {
+  width: 1.25rem; 
+  height: 1.25rem; 
+  color: #6b7280; 
+}
+
+.flex_types_container {
+  margin-top: 1rem; 
+  display: flex; 
+  flex-wrap: wrap; 
+  gap: 0.5rem; 
+  justify-content: center;
+}
+
+.types {
+  color: black; 
+  padding: 0.5rem 1rem; 
+  border-radius: 9999px; 
+  font-size: 0.75rem; 
+}
+
+/* BUTTON REGRESAR */
+
+.containerOne {
+  position: relative;
+}
+
+.divStyle {
+  display: inline-flex;
+  align-items: center;
+  border-radius: 0.375rem; 
+  border-width: 1px;
+  border-color: #e5e7eb;
+  background-color: #ffffff;
+  padding-left: 1rem; 
+  padding-right: 1rem; 
+  padding-top: 0.5rem; 
+  padding-bottom: 0.5rem; 
+  font-size: 0.875rem; 
+  line-height: 1.25rem; 
+  font-weight: 500;
+  color: #111827;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  transition-property: color, background-color, border-color, fill, stroke;
+  transition-duration: 150ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  position: absolute;
+  top: 1rem; 
+  left: 1rem; 
+  margin-right: 0.5rem; 
+  height: 1rem; 
+  width: 1rem; 
+}
+
+.divStyle:hover {
+  background-color: black;
+  color: white
+}
+
+.divStyle:focus {
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+  box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.2);
+}
+
+.divStyle:focus {
+  box-shadow: 0 0 0 2px #171717;
+}
+
+.divStyle:focus {
+  outline-offset: 2px;
+}
+
+.divStyle.dark {
+  border-color: #1f2937;
+  background-color: #0d1117;
+  color: #f9fafb;
+}
+
+.divStyle.dark:hover {
+  background-color: #1f2937;
+}
+
+.divStyle.dark:focus {
+  box-shadow: 0 0 0 2px #d1d5db;
+}
+
+
+.bug {
+  background-color: #729F3F;
+}
+
+.dark {
+  background-color: #232323;
+}
+
+.electric {
+  background-color: #EED535;
+}
+
+.dragon {
+  background-color: #F16E57;
+}
+
+.fairy {
+  background-color: #FDB9E9;
+}
+
+.fire {
+  background-color: #FD7D24;
+}
+
+.flying {
+  background-color: #5ed1ff;
+}
+
+.fighting {
+  background-color: #D56723;
+}
+
+.ghost {
+  background-color: #7B62A3;
+}
+
+.grass {
+  background-color: #9ACB50;
+}
+
+.ground {
+  background-color: #F7DE3F;
+}
+
+.ice {
+  background-color: #51C4E7;
+}
+
+.normal {
+  background-color: #A4ACAF;
+}
+
+.poison {
+  background-color: #B97FC9;
+}
+
+.psychic {
+  background-color: #F366B9;
+}
+
+.rock {
+  background-color: #A38C21;
+}
+
+.shadow {
+  background-color: #707070;
+}
+
+.steel {
+  background-color: #9EB7B8;
+}
+
+.unknown {
+  background-color: #F366B9;
+}
+
+.water {
+  background-color: #4592C4;
+}
+
+.stellar {
+  background-color: #4B0082; 
+}
+
+
+/* border */
+.bug_border {
+  border: 1px solid #729F3F;
+}
+
+.dark_border {
+  border: 1px solid #232323;
+}
+
+.electric_border {
+  border: 1px solid #EED535;
+}
+
+.dragon_border {
+  border: 1px solid #F16E57;
+}
+
+.fairy_border {
+  border: 1px solid #FDB9E9;
+}
+
+.fire_border {
+  border: 1px solid #FD7D24;
+}
+
+.flying_border {
+  border: 1px solid #5ed1ff;
+}
+
+.fighting_border {
+  border: 1px solid #D56723;
+}
+
+.ghost_border {
+  border: 1px solid #7B62A3;
+}
+
+.grass_border {
+  color: black;
+  border: 1px solid #9ACB50;
+}
+
+.ground_border {
+  border: 1px solid #F7DE3F;
+}
+
+.ice_border {
+  border: 1px solid #51C4E7;
+}
+
+.normal_border {
+  border: 1px solid #A4ACAF;
+}
+
+.poison_border {
+  border: 1px solid #B97FC9;
+}
+
+.psychic_border {
+  border: 1px solid #F366B9;
+}
+
+.rock_border {
+  border: 1px solid #A38C21;
+}
+
+.shadow_border {
+  border: 1px solid #707070;
+}
+
+.steel_border {
+  border: 1px solid #9EB7B8;
+}
+
+.unknown_border {
+  border: 1px solid #F366B9;
+}
+
+.water_border {
+  border: 1px solid #4592C4;
+}
+
+.stellar_border {
+  border: 1px solid #4B0082; 
+}
+
+
+.container_spiner{
+  border: 3px solid black;
+}
