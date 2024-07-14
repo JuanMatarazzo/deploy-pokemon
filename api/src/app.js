@@ -6,7 +6,6 @@ const routes = require('./routes/index.js');
 const types = require("./routes/type.js")
 const filters = require("./routes/filters")
 require('./db.js');
-const cors = require('cors')
 
 const server = express();
 
@@ -17,7 +16,7 @@ server.use(bodyParser.json({ limit: '50mb' }));
 server.use(cookieParser());
 server.use(morgan('dev'));
 // server.use((req, res, next) => {
-//   res.header('Access-Control-Allow-Origin', 'https://deploy-pokemon-seven.vercel.app/pokemons'); // update to match the domain you will make the request from
+//   res.header('Access-Control-Allow-Origin', 'https://deploy-pokemon-phi.vercel.app'); // update to match the domain you will make the request from
 //   res.header('Access-Control-Allow-Credentials', 'true');
 //   res.header('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept');
 //   res.header('Access-Control-Allow-Methods', 'GET, POST, OPTIONS, PUT, DELETE');
@@ -25,7 +24,7 @@ server.use(morgan('dev'));
 // });
 
 const allowedOrigins = [
-  'https://deploy-pokemon-seven.vercel.app/',
+  'https://deploy-pokemon-phi.vercel.app',
   'http://localhost:3000'
 ];
 
@@ -39,7 +38,7 @@ server.use((req, res, next) => {
   res.header('Access-Control-Allow-Methods', 'GET, POST, OPTIONS, PUT, DELETE');
   next();
 });
-server.use(cors())
+
 server.use('/pokemons', routes);
 server.use('/types', types)
 server.use('/filters', filters)
